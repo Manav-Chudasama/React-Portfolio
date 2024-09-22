@@ -20,7 +20,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="flex justify-center w-full lg:w-1/4"
+              className="justify-center w-full lg:w-1/4  hidden lg:flex"
             >
               <img
                 src={project.image}
@@ -34,7 +34,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
+              className="w-full text-center lg:text-start lg:w-3/4"
             >
               <h3 className="mb-2 font-semibold text-2xl text-center lg:text-start">
                 {project.title}
